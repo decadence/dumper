@@ -1,0 +1,64 @@
+div.dump
+{
+	border: 1px solid white;
+	overflow: hidden;
+	height: 20px;
+	white-space: pre;
+	margin: 10px 0;
+	padding: 5px 10px;
+	position: relative;
+	display: block;
+	vertical-align: top;
+	background: black;
+	color: rgb(0,219,0);
+	
+	-webkit-transition: height 200ms linear;
+	-moz-transition: height 200ms linear;
+	-o-transition: height 200ms linear;
+	transition: height 200ms linear;
+}
+
+div.dump a.copy-link
+{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	color: black;
+	padding: 5px;
+	border-radius: 5px;
+	border: 1px solid black;
+	text-decoration: none;
+	cursor: pointer;
+	display: none;
+}
+
+div.dump a.copy-link:hover
+{
+	background: gray;
+}
+
+.copy-button
+{
+	border: 1px solid;
+	border-radius: 5px;
+	padding: 5px;
+	display: inline-block;
+	cursor: pointer;
+	vertical-align: top;
+	text-decoration: none;
+}
+
+.copy-button.zeroclipboard-is-hover
+{
+	background: gray;
+}
+
+a.spoiler
+{
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	color: inherit;
+	display: none;
+	cursor: pointer;
+}
