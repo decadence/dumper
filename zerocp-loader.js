@@ -24,6 +24,8 @@
 			{
 				copy_elements[i].style.display = "inline-block";
 				clip_buttons[i].style.display = "none";
+				
+				// привязываем ко всем обработчик клика для выдачи окна с текстом для копирования
 				copy_elements[i].addEventListener("click", function(ev)
 				{
 					// выводим текст родителя
@@ -34,6 +36,7 @@
 		});
 		
 		
+		// использование спойлеров
 		if (use_spoiler)
 		{
 			var spoilers = document.getElementsByClassName("spoiler");
@@ -62,7 +65,4 @@
 		console.log("Initialized");
 		
 	}, 2000);
-	
-	
-	
 })();
