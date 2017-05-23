@@ -6,6 +6,6 @@ body
 </style>
 <?
 
-include($_SERVER["DOCUMENT_ROOT"] . "/dumper/dumper.php");
+include($_SERVER["DOCUMENT_ROOT"] . "/dumper.php");
 
 dump($_SERVER);

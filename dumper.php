@@ -1,9 +1,5 @@
 <?
-// префикс для правильных путей
-define("PREFIX", "/dumper");
-
-
-/*
+/**
 Переменная для распечатки
 Имя переменной для вывода в начале, так как получить имя автоматически затруднительно
 Размер раскрывшегося блока
@@ -11,8 +7,6 @@ define("PREFIX", "/dumper");
 
 3 и 4 параметр действуют только для первого вызова функции.
 */
-
-
 function dump($var, $name="Переменная", $height=500, $use_spoiler=false)
 {
 	static $first_run = true;
@@ -27,7 +21,7 @@ function dump($var, $name="Переменная", $height=500, $use_spoiler=fals
 	if ($first_run)
 	{
 ?>
-	<link href="<?=PREFIX?>/zerocp-style.css" rel="stylesheet" />
+	<link href="/zerocp-style.css" rel="stylesheet" />
 	
 	<?
 	
@@ -39,17 +33,17 @@ function dump($var, $name="Переменная", $height=500, $use_spoiler=fals
 	
 	?>
 	
-	<script src="<?=PREFIX?>/zerocp-main.js"></script>
+	<script src="/zerocp-main.js"></script>
 	
 	<script>
-	ZeroClipboard.setDefaults({ moviePath: "<?=PREFIX?>/zeroclipboard.swf" });
+	ZeroClipboard.setDefaults({ moviePath: "/zeroclipboard.swf" });
 	
 	var height = "<?=$height;?>px";
 	var use_spoiler = <?=$use_spoiler ? "true" : "false"?>;
 	
 	</script>
 	
-	<script src="<?=PREFIX?>/zerocp-loader.js"></script>
+	<script src="/zerocp-loader.js"></script>
 	
 <?
 	$first_run = false;
